@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+		<listener class-name="utilis.TestListener" />
+</listeners>
+   <test name="test checkout scenarios with chrome">
+  		<parameter name="browser" value="chrome" />
+    	<classes>
+    		<class name="tests.CheckOutTests"/> 
+<!--           	<class name="tests.RegistrationTest"/>     -->
+<!--            	<class name="tests.MenuTests"/>        -->
+<!--       		<class name="tests.ProductTests"/>         -->
+<!--        		<class name="tests.LoginTests"/>          -->
+    	</classes> 
+  </test> <!-- Test -->   	
+   <test name="tests scenarios with firefox"> 
+   		<parameter name="browser" value="firefox" /> 
+    	<classes> 
+     		 <class name="tests.MenuTests"/> 
+      	</classes> 
+ 	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -9,7 +9,7 @@
     	<classes>
     		<class name="tests.CheckOutTests"/> 
 <!--           	<class name="tests.RegistrationTest"/>     -->
-<!--            	<class name="tests.MenuTests"/>        -->
+            	<class name="tests.MenuTests"/>       
 <!--       		<class name="tests.ProductTests"/>         -->
 <!--        		<class name="tests.LoginTests"/>          -->
     	</classes> 
@@ -17,7 +17,7 @@
    <test name="tests scenarios with firefox"> 
    		<parameter name="browser" value="firefox" /> 
     	<classes> 
-     		 <class name="tests.MenuTests"/> 
+<!--      		 <class name="tests.MenuTests"/>  -->
       	</classes> 
  	</test> <!-- Test -->
 </suite> <!-- Suite -->

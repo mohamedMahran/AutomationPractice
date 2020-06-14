@@ -1,0 +1,6 @@
+tests\MenuTests.class
+tests\BaseTest.class
+tests\RegistrationTest.class
+tests\LoginTests.class
+tests\ProductTests.class
+tests\CheckOutTests.class

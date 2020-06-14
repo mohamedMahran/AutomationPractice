@@ -177,7 +177,7 @@ public  class Helper {
 	public static String load(String property) throws IOException {
 	    Properties prop;
 		prop = new Properties();
-		FileInputStream fis = new FileInputStream("../Task1/data.properties");
+		FileInputStream fis = new FileInputStream("../AutomationPractice/data.properties");
 		prop.load(fis);
 		return prop.getProperty(property);
 		

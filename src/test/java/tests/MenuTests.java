@@ -31,7 +31,7 @@ public class MenuTests extends BaseTest {
 
 	@DataProvider(name = "menuItems")
 	public Object[][] checkOut() throws  IOException {
-		return ExcelLib.getExcelData("../Task1/Data.xlsx", "menuItems");
+		return ExcelLib.getExcelData("../AutomationPractice/Data.xlsx", "menuItems");
 		
 	}
 

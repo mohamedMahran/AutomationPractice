@@ -96,7 +96,7 @@ public class CheckOutTests extends BaseTest {
 
 	@DataProvider(name = "checkOut")
 	public Object[][] checkOut() throws  IOException {
-		return ExcelLib.getExcelData("../Task1/Data.xlsx", "checkout");
+		return ExcelLib.getExcelData("../AutomationPractice/Data.xlsx", "checkout");
 
 	}
 }

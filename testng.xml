@@ -11,7 +11,7 @@
 <!--           	<class name="tests.RegistrationTest"/>     -->
             	<class name="tests.MenuTests"/>       
 <!--       		<class name="tests.ProductTests"/>         -->
-<!--        		<class name="tests.LoginTests"/>          -->
+        		<class name="tests.LoginTests"/>         
     	</classes> 
   </test> <!-- Test -->   	
    <test name="tests scenarios with firefox"> 

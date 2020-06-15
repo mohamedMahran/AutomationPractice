@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ReadPropertisFile {
-	static File file = new File("../../data.properties");
+	static File file = new File("../AutomationPractice/data.properties");
 	private static Properties prop = new Properties();
 	static FileInputStream fis;
 	private ReadPropertisFile()

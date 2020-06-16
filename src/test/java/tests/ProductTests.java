@@ -15,7 +15,7 @@ import utilis.ExtentTestManager;
 public class ProductTests extends BaseTest {
 
 	@Test
-	public void validateProductDetails() {
+	public void validateProductDetails() throws IOException {
 
 		Logger log = Logger.getLogger(ProductTests.class);
 		LoginPage loginPage = LoginPage.getLoginPage();

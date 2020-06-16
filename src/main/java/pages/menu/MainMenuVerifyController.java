@@ -58,10 +58,14 @@ public class MainMenuVerifyController {
 
 	public void productListDisplayedCorrectly()
 	{
-		List<String> actualProductList = getMainMenuItems();
-		Assert.assertTrue(actualProductList.contains("WOMEN"));
-		Assert.assertTrue(actualProductList.contains("DRESSES"));
-		Assert.assertTrue(actualProductList.contains("T-SHIRTS"));
-		
+			int index=-1;
+			List<String> actualProductList = getMainMenuItems();
+			for (String product : actualProductList) {
+				
+				index++;
+				Assert.assertTrue(actualProductList.get(index).equalsIgnoreCase(product));
+				
+			}
+
 	}
 }

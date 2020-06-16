@@ -4,20 +4,21 @@
 <listeners>
 		<listener class-name="utilis.TestListener" />
 </listeners>
-   <test name="test checkout scenarios with chrome">
+   <test name="test scenarios with chrome browser">
   		<parameter name="browser" value="chrome" />
     	<classes>
-     		<class name="tests.CheckOutTests"/> 
-           	<class name="tests.RegistrationTest"/>    
-            <class name="tests.MenuTests"/>        
-      		<class name="tests.ProductTests"/>       
-        		<class name="tests.LoginTests"/>         
+    			<class name="tests.CheckOutTests"/> 
+             	<class name="tests.RegistrationTest"/> 	    
     	</classes> 
-  </test> <!-- Test -->   	
-   <test name="tests scenarios with firefox"> 
+  </test>   	
+	<test name="tests scenarios with firefox browser"> 
+   	
    		<parameter name="browser" value="firefox" /> 
     	<classes> 
-    		 <class name="tests.MenuTests"/>  
+     		<class name="tests.LoginTests"/>
+     		<class name="tests.MenuTests"/>   
+     		<class name="tests.ProductTests"/>     
       	</classes> 
- 	</test> <!-- Test -->
+ 	
+ 	</test>  
 </suite> <!-- Suite -->

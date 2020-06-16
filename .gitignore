@@ -26,3 +26,4 @@ test-output/
 *.class
 FailedTestScreenshots/
 
+/target/

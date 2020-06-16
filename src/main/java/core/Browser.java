@@ -7,18 +7,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-
 import com.aventstack.extentreports.Status;
 
 import utilis.ExtentTestManager;
 
 public enum Browser {
+	
     FIREFOX("gecko", FirefoxDriver::new),//  Creates a new FirefoxDriver instance
-    CHROME("chrome", ChromeDriver::new),//   Creates a new ChromeDriver instance
-    IE("ie", InternetExplorerDriver::new);// Creates a new InternetExplorerDriver instance
-
+    CHROME("chrome", ChromeDriver::new);//   Creates a new ChromeDriver instance
+    //IE("ie", InternetExplorerDriver::new);// Creates a new InternetExplorerDriver instance
     private String name;
     private Supplier<WebDriver> driverSupplier;
+    
 
     Browser(String name, Supplier<WebDriver> driverSupplier) {
         this.name = name;

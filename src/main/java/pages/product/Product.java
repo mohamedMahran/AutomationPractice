@@ -1,7 +1,6 @@
 package pages.product;
 
-
-
+import java.io.IOException;
 
 public class Product {
 	
@@ -25,7 +24,7 @@ public class Product {
 		this.step=step;
 		this.check=check;
 	}
-	public static Product getProductPage()
+	public static Product getProductPage() throws IOException
 	{
 		return new Product(new ProductController() , new ProductVerifyController());
 	}

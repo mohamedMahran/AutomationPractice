@@ -32,13 +32,14 @@ public class LandingVerifyController {
 	}
 	public LandingVerifyController fullName(String expectedName)
 	{
-		 Assert.assertEquals(expectedName, Driver.findElement(By.className(account)).getText());
+		String actualResult=Driver.findElement(By.className(account)).getText();
+		 Assert.assertEquals(expectedName,actualResult );
 		 return this;
 	}
 	public LandingVerifyController headerText(String expectedHeader)
 	{
-		String actualHeader=Driver.findElement(By.cssSelector(header)).getText();
-		Assert.assertTrue(actualHeader.contains(expectedHeader));
+		String actualHeader=Driver.findElement(By.cssSelector(header)).getText().toLowerCase();
+		Assert.assertTrue(actualHeader.contains(expectedHeader.toLowerCase()));
 		return this;
 	}
 	public LandingVerifyController logOutAvailable()

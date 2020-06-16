@@ -20,9 +20,11 @@ public class RegistrationTest extends BaseTest{
 		Register  registerPage =Register.getRegisterPage();
 		LandingPage landing = LandingPage.getLandingPage();
 		LoginPage loginPage = LoginPage.getLoginPage();
+		
 		header.step().signIn();
 		loginPage.step().enterNewAccount();
 		loginPage.step().clickOnCreateAccountButton();
+		
 		registerPage.step().enterPersonalData(firstName, surName, passwod, company)
 						   .selectDates(days, month, year)
 						   .selectState(state)
@@ -33,16 +35,18 @@ public class RegistrationTest extends BaseTest{
 		landing.check().accountInfo("Welcome to your account.")
 					  .fullName(firstName + " " + surName)
 					  .logOutAvailable();
+		
 		header.step().signOut();
 	}
 	@DataProvider(name="accountInformation")
 	public Object[][] accountInformation()
 	{
-		return new Object[][] {{"Firstname","Lastname","Qwerty","Company",
-								"1","10","2000",
-								"Qwerty, 123","zxcvb","Qwerty",
-								"2",
-								"12345","Qwerty","12345123123","12345123123","hf"
-								}};
+		return new Object[][] {{
+			"Firstname","Lastname","Qwerty","Company",
+			"1","10","2000",
+			"Qwerty, 123","zxcvb","Qwerty",
+			"2",
+			"12345","Qwerty","12345123123","12345123123","hf"
+			}};
 	}
 }

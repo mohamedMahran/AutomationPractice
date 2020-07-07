@@ -6,8 +6,8 @@ pipeline {
         echo 'Execute Tests'
         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
         echo "Jenkins Workspace ${env.WORKSPACE}"
-        bat "mvn -f clean"
-        bat "mvn -f test "
+        bat "mvn -f pom.xml clean"
+        bat "mvn -f pom.xml test "
       }
     } 
   }

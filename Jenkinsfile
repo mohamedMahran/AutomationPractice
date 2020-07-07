@@ -28,7 +28,7 @@ pipeline {
     		{
         
        		// Archive the built artifacts
-  			archive '/target/*.jar
+  			archive '/target/*.jar'
   			}
 		}
 		stage('Publish Extent Report')

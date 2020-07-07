@@ -13,7 +13,7 @@ pipeline {
         	}
     	}
     
-   		stage('Test Automation Tests') 
+   		stage('Execute Automation Tests') 
     		{
     		
       		steps 
@@ -45,7 +45,11 @@ pipeline {
      	 	 	reportFiles: 'Test-Automaton-Report.html',
       	 	 	reportName: "HTML Report"
     			])
+    		bat label: '', script: 'System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "sandbox allow-scripts; default-src \'self\'; img-src *; style-src \'self\' \'unsafe-inline\'; script-src * \'unsafe-inline\';")'
+    		
     		}
+    		
     	}
+    	
 	  } 
   }

@@ -9,7 +9,7 @@ pipeline {
         bat "mvn -f pom.xml clean"
         bat "mvn -f pom.xml test "
        // Archive the built artifacts
-  		archive (includes: '/target/')
+  		archiveArtifacts  (includes: '/target/')
 
   		// publish html
   		// snippet generator doesn't include "target:"
@@ -18,7 +18,7 @@ pipeline {
       	 allowMissing: false,
       	 alwaysLinkToLastBuild: false,
      	 keepAll: true,
-     	 reportDir: 'coverage',
+     	 reportDir: 'TestReport',
      	 reportFiles: 'Test-Automaton-Report.html',
       	 reportName: "HTML Report"
     ])

@@ -3,18 +3,14 @@ pipeline {
     stages {
         stage('Clean') { 
             steps {
-               bat "mvn -f openmrs clean"
+               bat "mvn -f AutomationPractice clean"
             }
         }
         stage('Test') { 
             steps {
-                bat "mvn -f openmrs test"
+                bat "mvn -f AutomationPractice test"
             }
         }
-        stage('Deploy') { 
-            steps {
-                // 
-            }
-        }
+
     }
 }

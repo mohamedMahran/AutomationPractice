@@ -45,10 +45,14 @@ pipeline {
      	 	 	reportFiles: 'Test-Automaton-Report.html',
       	 	 	reportName: "HTML Report"
     			])
-    		
-    		}
-    		
+    		}    		
     	}
-
+    	post 
+    	{
+        always 
+        	{
+            step([$class: 'Publisher', reportFilenamePattern: '**/testng-results.xml'])
+        	}
+		}
 	  } 
   }

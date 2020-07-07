@@ -30,14 +30,12 @@ pipeline {
        		// Archive the built artifacts
   			archive '/target/*.jar'
   			}
-		}
+		 }
 		stage('Publish Extent Report')
 		{
-			Steps
+			steps
 			{
-  			// publish html
-  			// snippet generator doesn't include "target:"
-  			// https://issues.jenkins-ci.org/browse/JENKINS-29711.
+  			
  	 		publishHTML (target: 
  	 			[
       		 	allowMissing: false,

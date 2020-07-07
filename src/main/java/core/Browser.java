@@ -39,7 +39,7 @@ public enum Browser {
                 return browser;
             }
         }
-        ExtentTestManager.getTest().log(Status.FAIL,"Invalid driver name passed as 'browser' system property. "
+        ExtentTestManager.getTest().log(Status.SKIP,"Invalid driver name passed as 'browser' system property. "
             + "One of: " + Arrays.toString(values()) + " is expected. Defaulting to Firefox.");
         return FIREFOX;
     }

@@ -5,24 +5,25 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Driver {
-	/*When we develop a class in such a way that it can have only instance at any time, is called Singleton design pattern. It is very useful when you need to use same object of a class across all classes or framework. Singleton class must return the same instance again, if it is instantiated again.
-To create a singleton class, we need to do following steps:
-1.	Declare constructor of class as private so that no one instantiate class outside of it.
-2.	Declare a static reference variable of class. Static is needed to make it available globally.
-3.	Declare a static method with return type as object of class which should check if class is already instantiated once.
-How does Singleton pattern help in Selenium Web driver?
-1.	Keep track of same driver instance throughout execution.
-2.	Loading external files like properties, excel etc. once rather than loading again and again.
-3.	Logger.
-So, wherever you feel, you should have single instance of any class, you should use singleton design pattern.  For example: If database connection is already established, you should not create new connection.
-*/
+	/*
+	 * When we develop a class in such a way that it can have only instance at any time, is called Singleton design pattern. 
+	 * It is very useful when you need to use same object of a class across all classes or framework. Singleton class must return the same instance again, 
+	 * if it is instantiated again.
+		
+		To create a singleton class, we need to do following steps:
+			1.	Declare constructor of class as private so that no one instantiate class outside of it.
+			2.	Declare a static reference variable of class. Static is needed to make it available globally.
+			3.	Declare a static method with return type as object of class which should check if class is already instantiated once.
+	How does Singleton pattern help in Selenium Web driver?
+			1.	Keep track of same driver instance throughout execution.
+			2.	Loading external files like properties, excel etc. once rather than loading again and again.
+			3.	Logger.
+	So, wherever you feel, you should have single instance of any class, you should use singleton design pattern. 
+	 */
 	private static WebDriverWait wait;
 	private static WebDriver instance = null;
 	private static final String WEB_DRIVER_FOLDER = "webdrivers";

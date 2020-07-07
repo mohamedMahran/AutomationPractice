@@ -14,15 +14,16 @@ import com.aventstack.extentreports.Status;
 import utilis.ExtentTestManager;
 public class NullWebElement implements WebElement {
 	
-/*  Null object implements given interface and its methods are doing nothing.This makes the null object more predictable. 
+/*  Null object implements given interface and its methods are doing nothing.
+ *  This makes the null object more predictable. 
     You can safely invoke methods on the null object without the threat of a NullRefferenceException to break your application.
     This pattern is very well combined with singleton pattern where a null object is actually a singleton. 
     In this case, you can check for reference or equality.
     
-    I’m going to give example where Singleton is used along with Null object pattern. 
+    I am going to give example where Singleton is used along with Null object pattern. 
     NullWebElement implements IWebElement interface. 
     So it must implement all methods and properties defined by the interface. 
-    This is done on lines 50 to 129.
+    
     
     Properties are returning some values, but not null! Methods are doing nothing. 
     

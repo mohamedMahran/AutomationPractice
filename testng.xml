@@ -8,16 +8,16 @@
   		<parameter name="browser" value="chrome" />
     	<classes>
     			<class name="tests.CheckOutTests"/> 
-             	<class name="tests.RegistrationTest"/> 	    
+<!--              	<class name="tests.RegistrationTest"/> 	     -->
     	</classes> 
   </test>   	
 	<test name="tests scenarios with firefox browser"> 
    	
    		<parameter name="browser" value="firefox" /> 
     	<classes> 
-     		<class name="tests.LoginTests"/>
-     		<class name="tests.MenuTests"/>   
-     		<class name="tests.ProductTests"/>     
+<!--      		<class name="tests.LoginTests"/> -->
+<!--      		<class name="tests.MenuTests"/>    -->
+<!--      		<class name="tests.ProductTests"/>      -->
       	</classes> 
  	
  	</test>  

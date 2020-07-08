@@ -73,11 +73,11 @@ pipeline {
     	   	 
 	 }
   }
-    	   def notify(status)
+    	 def notify(status)
     	   {
     	   emailext
     	   		(
-    	   to: "mohamedmahran72@gmail.com"
+    	   to: "mohamedmahran72@gmail.com",
     	   subject:  "${status}:Job '${env.JOB_NAME}' [$ {env.Build_Number]'",
     	   body: """<p>${status}:Job '${env.JOB_NAME}' [$ {env.Build_Number]':</p>
     	   <p> Check console output at <a herf ='${env.BUILD_URL}'>'${env.JOB_NAME}' [$ {env.Build_Number] </a></p>""",

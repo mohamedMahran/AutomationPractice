@@ -50,7 +50,7 @@ pipeline {
     			allowMissing: true, 
     			alwaysLinkToLastBuild: false, 
     			keepAll: true, 
-    			reportDir: '**/testng-results.xml', 
+    			reportDir: 'testng-results.xml', 
     			reportFiles: 'index.html', reportName: 'Code Coverage', 
     			reportTitles: ''
     			])

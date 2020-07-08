@@ -45,7 +45,13 @@ pipeline {
      	 	 	reportFiles: 'Test-Automaton-Report.html',
       	 	 	reportName: "HTML Report"
     			])
-    		publishHTML(target:
+    		}    		
+    	}
+    	stage('Generate testNG report')
+    	{
+    	steps
+    		{
+    	publishHTML(target:
     			[
     			allowMissing: true, 
     			alwaysLinkToLastBuild: false, 
@@ -54,8 +60,7 @@ pipeline {
     			reportFiles: 'index.html', reportName: 'Code Coverage', 
     			reportTitles: ''
     			])
-    		
-    		}    		
+    		}
     	}
    	 
 	 }

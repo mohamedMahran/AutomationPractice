@@ -61,21 +61,33 @@ pipeline {
     				reportFiles: 'emailable-report.html', 
     				reportName: 'Code Coverage', 
     				reportTitles: ''
-    				]),
+    				])
+    		
+    		}
+    	}	
+    	stage ('Send email report ' )
+    	{
+    		steps
+    		{
     		notify('Started')
     		}
-    	}		 	 
+    	}	 	 
 	 }
   }
   
   	def notify(status) {
-   		wrap([$class: 'BuildUser']) {
-      	 emailext (
-      	 subject: "${status}: Job ${env.JOB_NAME} ([${env.BUILD_NUMBER})",
+   		wrap([$class: 'BuildUser']) 
+   		{
+      	 emailext 
+      	 	(
+      	 	 subject: "${status}: Job ${env.JOB_NAME} ([${env.BUILD_NUMBER})",
        		 body: """
        		 Check console output at <a href="${env.BUILD_URL}">${env.JOB_NAME} (${env.BUILD_NUMBER})</a>""",
       		 to: "${mmahran@integrant.com}",
-       		 from: 'mohamedmahran72@gmail.com')
-   }
+       		 from: 'mohamedmahran72@gmail.com'
+       		 )
+       		 
+   			}
+   		}
   
     	 

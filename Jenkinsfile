@@ -45,7 +45,7 @@ pipeline {
      	 	 	reportFiles: 'Test-Automaton-Report.html',
       	 	 	reportName: "HTML Report"
     			])
-    		step([$class: 'Publisher',reportFilenamePattern: '**/testng-results.xml'])
+    		step([$class: 'SeleniumHtmlReport',reportFilenamePattern: '**/testng-results.xml'])
     		}    		
     	}
    	 

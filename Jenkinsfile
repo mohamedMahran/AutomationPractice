@@ -45,14 +45,15 @@ pipeline {
      	 	 	reportFiles: 'Test-Automaton-Report.html',
       	 	 	reportName: "HTML Report"
     			])
-    		publishHTML(
-    		[allowMissing: true, 
-    		alwaysLinkToLastBuild: false, 
-    		keepAll: true, 
-    		reportDir: 'targe/surefire-reports/testng-results.xml', 
-    		reportFiles: 'index.html', reportName: 'Code Coverage', 
-    		reportTitles: ''
-    		])
+    		publishHTML(target:
+    			[
+    			allowMissing: true, 
+    			alwaysLinkToLastBuild: false, 
+    			keepAll: true, 
+    			reportDir: 'targe/surefire-reports/testng-results.xml', 
+    			reportFiles: 'index.html', reportName: 'Code Coverage', 
+    			reportTitles: ''
+    			])
     		
     		}    		
     	}

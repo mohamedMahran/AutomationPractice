@@ -45,7 +45,15 @@ pipeline {
      	 	 	reportFiles: 'Test-Automaton-Report.html',
       	 	 	reportName: "HTML Report"
     			])
-    		step([$class: 'SeleniumHtmlReport',reportFilenamePattern: '**/testng-results.xml'])
+    		publishHTML(
+    		[allowMissing: true, 
+    		alwaysLinkToLastBuild: false, 
+    		keepAll: true, 
+    		reportDir: 'targe/surefire-reports/testng-results.xml', 
+    		reportFiles: 'index.html', reportName: 'Code Coverage', 
+    		reportTitles: ''
+    		])
+    		
     		}    		
     	}
    	 

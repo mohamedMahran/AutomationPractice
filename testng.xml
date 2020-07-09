@@ -7,8 +7,9 @@
    <test name="test scenarios with chrome browser">
   		<parameter name="browser" value="chrome" />
     	<classes>
-    			<class name="tests.CheckOutTests"/> 
+<!--     			<class name="tests.CheckOutTests"/>  -->
 <!--              	<class name="tests.RegistrationTest"/> 	      -->
+					<class name="tests.MenuTests"/>
     	</classes> 
   </test>   	
 	<test name="tests scenarios with firefox browser"> 

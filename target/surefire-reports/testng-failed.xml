@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
-  <parameter name="browser" value="firefox"/>
+  <parameter name="browser" value="chrome"/>
   <listeners>
     <listener class-name="utilis.TestListener"/>
   </listeners>
-  <test name="tests scenarios with firefox(failed)">
-    <parameter name="browser" value="firefox"/>
+  <test name="test scenarios with chrome browser(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="tests.CheckOutTests">
-        <methods>
-          <include name="goToHome"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- tests.CheckOutTests -->
       <class name="tests.MenuTests">
         <methods>
-          <include name="testCountsOfProductListForEachMainProduct"/>
+          <include name="testCountsOfProductListForEachMainProduct" invocation-numbers="0 1"/>
+          <include name="goToHome"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- tests.MenuTests -->
     </classes>
-  </test> <!-- tests scenarios with firefox(failed) -->
+  </test> <!-- test scenarios with chrome browser(failed) -->
 </suite> <!-- Failed suite [Suite] -->

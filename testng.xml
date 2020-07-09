@@ -10,16 +10,8 @@
 <!--     			<class name="tests.CheckOutTests"/>  -->
 <!--              	<class name="tests.RegistrationTest"/> 	      -->
 					<class name="tests.MenuTests"/>
+<!-- 					<class name="tests.LoginTests"/> -->
+<!-- 					<class name="tests.ProductTests"/>  -->
     	</classes> 
   </test>   	
-	<test name="tests scenarios with firefox browser"> 
-   	
-   		<parameter name="browser" value="firefox" /> 
-    	<classes> 
-<!--      		<class name="tests.LoginTests"/>  -->
-<!--       		<class name="tests.MenuTests"/>    -->
-<!--       		<class name="tests.ProductTests"/>     -->
-      	</classes> 
- 	
- 	</test>  
 </suite> <!-- Suite -->

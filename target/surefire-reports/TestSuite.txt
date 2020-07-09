@@ -1,22 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 27.371 sec <<< FAILURE! - in TestSuite
-testCountsOfProductListForEachMainProduct(tests.MenuTests)  Time elapsed: 1.154 sec  <<< FAILURE!
-java.lang.AssertionError: expected [2] but found [1]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertEquals(Assert.java:125)
-	at org.testng.Assert.assertEquals(Assert.java:372)
-	at org.testng.Assert.assertEquals(Assert.java:382)
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 29.838 sec <<< FAILURE! - in TestSuite
+testCountsOfProductListForEachMainProduct(tests.MenuTests)  Time elapsed: 2.237 sec  <<< FAILURE!
+java.lang.AssertionError: expected [2] but found [0]
 	at tests.MenuTests.testCountsOfProductListForEachMainProduct(MenuTests.java:25)
 
-testCountsOfProductListForEachMainProduct(tests.MenuTests)  Time elapsed: 0.925 sec  <<< FAILURE!
-java.lang.AssertionError: expected [3] but found [2]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertEquals(Assert.java:125)
-	at org.testng.Assert.assertEquals(Assert.java:372)
-	at org.testng.Assert.assertEquals(Assert.java:382)
+testCountsOfProductListForEachMainProduct(tests.MenuTests)  Time elapsed: 1.73 sec  <<< FAILURE!
+java.lang.AssertionError: expected [3] but found [1]
 	at tests.MenuTests.testCountsOfProductListForEachMainProduct(MenuTests.java:25)
 

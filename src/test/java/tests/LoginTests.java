@@ -42,7 +42,7 @@ import utilis.ExtentTestManager;
 				//Assertions
 			
 				landing.check().fullName("Joe Black")
-				   .headerText("MY ACCOUNT")
+				   .headerText("MY ACCOUNT1")
 				   .logOutAvailable();
 				header.step().signOut();
 

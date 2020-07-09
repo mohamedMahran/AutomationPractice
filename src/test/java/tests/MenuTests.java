@@ -22,7 +22,7 @@ public class MenuTests extends BaseTest {
 			menu.step().hoverOnTheMainMenu(mainProduct);
 			int expectedCountOfMainProduct = menu.check().countOfProductItemsOf(mainProduct);
 			int actualCountOfMainProduct = Integer.parseInt(actualCount);
-			Assert.assertEquals(expectedCountOfMainProduct-1, actualCountOfMainProduct);
+			Assert.assertEquals(expectedCountOfMainProduct, actualCountOfMainProduct);
 		} catch (Exception e) {
 			ExtentTestManager.getTest().log(Status.INFO, ExceptionUtils.getStackTrace(e));
 		}

@@ -4,7 +4,7 @@
 <listeners>
 		<listener class-name="utilis.TestListener" />
 </listeners>
-   <test name="test scenarios with chrome browser">
+   <test name="test scenarios">
   		<parameter name="browser" value="chrome" />
     	<classes>
 <!--     			<class name="tests.CheckOutTests"/>  -->

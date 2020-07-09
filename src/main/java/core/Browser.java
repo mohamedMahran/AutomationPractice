@@ -13,7 +13,7 @@ import utilis.ExtentTestManager;
 
 public enum Browser {
 	
-    FIREFOX("gecko", FirefoxDriver::new),//  Creates a new FirefoxDriver instance
+    //FIREFOX("gecko", FirefoxDriver::new),//  Creates a new FirefoxDriver instance
     CHROME("chrome", ChromeDriver::new);//   Creates a new ChromeDriver instance
     //IE("ie", InternetExplorerDriver::new);// Creates a new InternetExplorerDriver instance
     private String name;
@@ -41,6 +41,6 @@ public enum Browser {
         }
         ExtentTestManager.getTest().log(Status.SKIP,"Invalid driver name passed as 'browser' system property. "
             + "One of: " + Arrays.toString(values()) + " is expected. Defaulting to Firefox.");
-        return FIREFOX;
+        return CHROME;
     }
 }

@@ -5,7 +5,7 @@
   <listeners>
     <listener class-name="utilis.TestListener"/>
   </listeners>
-  <test name="test scenarios with chrome browser(failed)">
+  <test name="test scenarios(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="tests.MenuTests">
@@ -17,5 +17,5 @@
         </methods>
       </class> <!-- tests.MenuTests -->
     </classes>
-  </test> <!-- test scenarios with chrome browser(failed) -->
+  </test> <!-- test scenarios(failed) -->
 </suite> <!-- Failed suite [Suite] -->
